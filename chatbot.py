@@ -3,9 +3,9 @@ import openai
 from datetime import datetime
 import os
 import pandas as pd        
-openai.api_key = os.getenv("OPENAI_API_KEY")
+OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
 # Set up OpenAI API key
-client = openai.OpenAI(api_key='openai.api_key')
+client = openai.OpenAI(api_key='OPENAI_API_KEY')
 
 def get_bot_response(prompt, conversation_history):
     messages = [
